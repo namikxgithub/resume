@@ -1,0 +1,188 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % font size, paper size, font family
+
+% --- Theme (set color BEFORE style so headers render in blue) ---
+\moderncvcolor{blue}                                 % sections and name in BLUE
+\moderncvstyle{banking}                              % 'casual', 'classic', 'oldstyle', 'banking'
+
+% Encoding & layout
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=color1, linkcolor=color1} % make links blue (theme color)
+\usepackage[normalem]{ulem}                          % for \uline underlines
+
+% --- Designation style: bold-italics in grey (moderncv's color2) ---
+\newcommand{\role}[1]{\textcolor{color2}{\textbf{\textit{#1}}}}
+% -------------------------------------------------------------------
+
+% ---------------- Header (single line under your name) ----------------
+\name{Naman}{Malik}
+\email{namanmalik0210@gmail.com}
+\social[linkedin]{naman-malik-495664133}
+\homepage{https://namikxgithub.github.io/}
+% ----------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle
+\renewcommand{\baselinestretch}{1.1}
+\vspace{-1.2cm}
+
+% ===================== Education =====================
+\section{Education}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+\item{\cventry{Aug 2019 - July 2023}
+              {BTech. in Electronics and Communication (8.51 CGPA)}
+              {\uline{MAHRAJA AGRASEN INSTITUTE OF TECHNOLOGY (GGSIPU)}}
+              {}{}{% details
+\vspace{1pt}
+}}
+\end{itemize}
+
+% =========== Industrial Experience ===============
+\section{Industrial Experience}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+
+% --- Entry 1: Combat Robotics (updated; bullets only inside the position) ---
+\item{\cventry{\textbf{June 2023 – Till Date}}{\role{Sr. Robotics Engineer}}{\uline{Combat Robotics}}{}{}{% details
+\vspace{1pt}
+\begin{itemize}
+  \item \textbf{Chassis-less UGV Platform:} Created custom controllers and hardware interfaces for \textbf{ROS2 Control} to communicate with a daughterboard on an outdoor \textbf{UGV}; streamlined video streaming and a low-latency control layer for \textbf{surveillance} and \textbf{teleoperation}; built a modular multi-robot \textbf{SLAM} \& navigation system; autonomy stack with \textbf{LIO-SLAM}, dual \textbf{RTK GPS}, wheel odometry, and \textbf{EKF} achieving $\sim$2\,cm localization; elevation mapping with \textbf{grid maps} in \textbf{ROS2}; tuned \textbf{MPPI} (MPPI Generic) for dynamic trajectories; robust off-road person tracking via \textbf{YOLO}+re-ID; auto-aiming turret prototype using \textbf{YOLOv11}+\textbf{PID}.
+  \item \textbf{Throwable Spherical Surveillance Drone:} Built the control \& communication stack enabling \textbf{jumping} and \textbf{driving}; added \textbf{autojump}, \textbf{face recognition}, and \textbf{object detection}; integrated low-latency teleoperation for surveillance/rescue.
+  \item \textbf{Outdoor Simulator:} Custom simulator on \textbf{Gazebo Harmonic}/\textbf{GZ-SIM} with bespoke \textbf{GZ plugins} for weather, daylight, and noise; pipelines to generate real terrains from \textbf{heightmaps} to bridge \textbf{SIM} and \textbf{Reality}. (\href{https://www.canva.com/design/DAGFOrE22g4/t0eTn3zlOn23nWk1t7JzAw/edit}{\textbf{Project Presentation}})
+\end{itemize}
+}}
+
+% --- Entry 2: Acceleration Robotics India ---
+\item{\cventry{\textbf{Jan 2022 – June 2023}}{\role{Robotics Developer}}{\uline{Acceleration Robotics India}}{}{}{% details
+\vspace{1pt}
+\begin{itemize}
+  \item Created modular pipeline using \textbf{ROS2} and \textbf{Moveit2!} to create remote labs in order to perform remote experiments using \textbf{AWS IOT} web services through using various robotic manipulators. The experiments can be tested in \textbf{GZ SIM} in order to test the operations and use the generated trajectories for real ARM.
+  \item Implemented custom costmap layer to integrate \textbf{Nvidia’s Isaac Nvblox} package for vision based obstacle detection using multiple \textbf{realsense} sensors for indoor \textbf{AMR} by Peer Robotics. (\href{https://www.linkedin.com/posts/accelerationrobotics_hardware-acceleration-in-robotics-51-activity-7042449531614998528-HFch/?utm_source=share\&utm_medium=member_desktop}{\textbf{Project Post}})
+  \item Developed a \textbf{VR} based interface for operating an actual or simulated \textbf{UR5} Robotic Arm using \textbf{Unity3D} \textbf{Oculus Quest}, \textbf{ROS} and \textbf{Moveit!} (\href{https://www.youtube.com/watch?v=jFo0pl8dzfo\&feature=youtu.be}{\textbf{Project Video}})
+\end{itemize}
+}}
+
+% --- Entry 3: Rigbetel Labs ---
+\item{\cventry{\textbf{Feb 2021 – Jan 2022}}{\role{Freelance Robotics Developer}}{\uline{Rigbetel Labs}}{}{}{% details
+\vspace{1pt}
+\begin{itemize}
+  \item Created and description package for a custom robotic arm using \textbf{Fusion360} and implement \textbf{ROS} Manipulation stack using \textbf{Moveit!} to get the \textbf{IK} calculation and control the arm.
+  \item Created \textbf{ROS}-based software stack \& simulation for an Autonomous Mobile Robot with an attached \textbf{UR5} Robotic Arm.
+  \item Created an open-source object follower package for their product - ’\textbf{TortoiseBot}’ using \textbf{OpenCV} and \textbf{ROS} to make students familiar with the tech stacks. (\href{https://www.youtube.com/watch?v=xfDFu0EfD9k}{\textbf{Project Video}})
+\end{itemize}
+}}
+
+\end{itemize}
+
+% =========== Research Experience ===============
+\section{Research Experience}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+
+% --- Entry 1: Eyantra Lab, IITB (Project Presentation) ---
+\item{\cventry{\textbf{June 2022 – Aug 2022}}{\role{Robotics Research Intern}}{\uline{Eyantra Lab, IITB} (\href{https://www.canva.com/design/DAFVeOZg4PM/YKauL6keNU8DIRLm6gjE0g/edit}{Project Presentation})}{}{}{% details
+\vspace{1pt}
+\begin{itemize}
+  \item Development of an Actual \textbf{ROS}-based Mobile Robot that is capable of implementing \textbf{SLAM} and \textbf{Autonomous Navigation} based applications to teach students and provide students a platform to tinker with.
+  \item Design and Fabricate an easy to assemble and modular mobile base for educational purposes.
+\end{itemize}
+}}
+
+% --- Entry 2: Eyantra Lab, IITB (Project Poster | Video | Presentation) ---
+\item{\cventry{\textbf{June 2021 – Aug 2021}}{\role{Robotics Research Intern}}{\uline{Eyantra Lab, IITB} (\href{https://www.canva.com/design/DAEjr4CP6T8/rHWFZKv6Wd_KXP36bsrGpg/edit}{Project Poster} \,|\, \href{https://www.youtube.com/watch?v=x086V64iqbQ}{Video} \,|\, \href{https://www.canva.com/design/DAFSVxGoyik/KDxwkLOKKTiap6hL9xeiuA/edit}{Presentation})}{}{}{% details
+\vspace{1pt}
+\begin{itemize}
+  \item Worked on developing a (\textbf{AR APPLICATION}) to simulate and control a \textbf{UR5} Arm in augmented reality using \textbf{ROS}, \textbf{Moveit!} and \textbf{Unity3d}.
+\end{itemize}
+}}
+
+\end{itemize}
+
+% =========== Leadership / Extracurricular (on a new page) ===============
+\newpage
+% =========== Leadership / Extracurricular ===========
+\clearpage % or just delete this line
+\section{Leadership \& Extracurricular}
+
+\cventry{\textbf{Sep 2021 – Apr 2022}}{\role{Co-Founder}}{\uline{ATOM Robotics Lab}
+  (\href{https://atom-robotics-lab.github.io/}{Website} \,|\, \href{https://github.com/atom-robotics-lab}{Github} \,|\, \href{https://www.instagram.com/a.t.o.m_robotics_lab/}{Insta})}{}{}{% details
+\begin{itemize}
+  \item Co-founded a robotics society/community with active \textbf{50+} club members and \textbf{1000+} community members.
+  \item Led major and minor projects to promote project-based learning. Highlights:
+  \item \textbf{AJGAR} (\href{https://github.com/atom-robotics-lab/robotic-arm-atom}{Visit Project}): 6DOF stepper-based robotic arm with \textbf{Cycloidal Gearbox}; object recognition, localization, autonomous pick-and-place; payload up to \textbf{2\,kg}.
+  \item \textbf{MR ROBOT} (\href{https://github.com/atom-robotics-lab/MR-Robot}{Visit Project}): Low-cost in-house \textbf{RPI4} + \textbf{ESP32} based \textbf{AMR} for autonomous navigation and vision tasks.
+  \item Conducted seminars/workshops on \textbf{GIT}, \textbf{Linux}, \textbf{ROS}, \textbf{Computer Vision} for \textbf{100+} students.
+\end{itemize}
+}
+
+% =========== Public Contributions & Talks ===========
+\section{Public Contributions \& Talks}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+  \item Contributed on creating realistic simulation demo’s with real world extraterrestrial terrains and modular plugins for dynamic weather conditions and daylight changes for the \textbf{Space-ROS} \& \textbf{GZ-SIM} organisations (\href{https://github.com/space-ros/demos/pull/40}{\textbf{PR Link}})
+  \item Gave a talk in \textbf{ROSCON India} about creation of simulations for realistic outdoor environments to bridge the gap between simulation and reality. (\href{https://www.youtube.com/watch?v=h7NCRMZw_Ck\&t=3s}{\textbf{Talk Video}})
+  \item Gave a talk in \textbf{ROS-Meetup-Delhi} about addition of weather artefacts and dynamic lighting conditions .
+\end{itemize}
+
+% =========== Personal Major Projects ===========
+\section{Personal Major Projects}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+  \item \textbf{FUNCTIONAL WEEDER} (\href{https://www.youtube.com/watch?v=3P83Am4KuCc}{Project Video})
+  \item Implemented an \textbf{Auction-based} algorithm in \textbf{Elixir} for Fleet Management of two agricultural robots
+  \item Implemented an \textbf{A*} based path planning algorithm for robots in \textbf{Elixir} for a grid like arena.
+  \item Designed 3D printed a 2 DoF robotic arm with 2 finger gripper for pick \& place \& wrote an \textbf{Elixir GenServer} for arm control using a \textbf{Raspberry Pi} \& \textbf{Servo Driver} module.
+  \item \textbf{SAHAYAK BOT} (\href{https://www.youtube.com/watch?v=0ljyceDQHuQ}{Project Video})
+  \item Created \textbf{ROS}-based software stack \& simulation for an Autonomous Mobile Base with an attached \textbf{UR5} Robotic Arm.
+  \item Used \textbf{Gmapping} to implement \textbf{SLAM} \& \textbf{ROS Navigation Stack} with ROS actions to implement autonomous navigation.
+  \item Implemented A Custom Perception Pipeline to Recognize \& Localize objects using \textbf{Stereo Camera} and \textbf{OpenCV} and \textbf{FindObject2D} package .
+  \item Implemented \textbf{ROS} Manipulation using \textbf{Moveit!} to control the \textbf{UR5} robotic manipulator.
+\end{itemize}
+
+% =========== Technical Skills ===========
+\section{Technical Skills}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+  \item Programming Languages: \textbf{Python} | \textbf{C++} | \textbf{C\#}
+  \item Technologies/Frameworks: \textbf{ROS/ROS2}, \textbf{Gazebo/GZ-SIM}, \textbf{OpenCV}, \textbf{YOLO}, \textbf{Unity}, \textbf{Vuforia}, \textbf{Gstreamer}
+  \item DevOps Tools: \textbf{GIT}, \textbf{Github}, \textbf{Docker}, \textbf{Linux}
+  \item Mechanical/Hardware: \textbf{Fusion360} | \textbf{Blender} | \textbf{Cura} | \textbf{3D Printing}
+\end{itemize}
+
+% =========== Awards \& Achievements ===========
+\section{Awards \& Achievements}
+
+\vspace{0.5pt}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\begin{itemize}
+  \item \textbf{Top 4} among \textbf{300 teams} in \textbf{EYRC (Eyantra Robotics Competition)  2021/2022} - Received an internship for best robot design for a period 2 months to work on a research project at \textbf{IITB}.
+  \item \textbf{Top 7} among \textbf{500 teams} in \textbf{EYRC (Eyantra Robotics Competition 2020/21)} - Received an online internship to work on a \textbf{AR} based Robotics Research Project.
+  \item \textbf{First prize} as team atom in \textbf{BVCIAM Hackathon} organized by \textbf{BVP}.
+  \item \textbf{6th Place} in \textbf{IRO 2017} National Level.
+  \item \textbf{Best run} in \textbf{FLL 2016} Nationals.
+\end{itemize}
+
+\end{document}
